@@ -10,7 +10,7 @@ describe FakerApi::Client do
 
   describe '#companies' do
     before do
-      allow(FakerApi::Client).to receive(:get).with('/companies').and_return(
+      allow(FakerApi::Client).to receive(:get).with('/companies', anything).and_return(
         JSON.parse(
           File.read(
             File.expand_path(File.join(File.dirname(__FILE__), 'sample_response.json'))
