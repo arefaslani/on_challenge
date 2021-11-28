@@ -17,7 +17,7 @@ class DealerNormalizer
           fetch('addresses', [{}]).
           first.
           slice('street', 'zipcode', 'city', 'latitude', 'longitude')
-      }
+      }.with_indifferent_access
     end
   end
 end

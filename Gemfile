@@ -55,3 +55,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Simple HTTP client
 gem 'httparty', '~> 0.20.0'
+# Handle batch inserts and updates
+gem 'activerecord-import'
