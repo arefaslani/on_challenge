@@ -1,6 +1,6 @@
 namespace :dealers do
   desc 'Fetch and update dealers'
-  task :update do
+  task update: :environment do
     companies_data = FakerApi::Client.new.companies
     dealers_data = DealerNormalizer.call(companies_data)
 

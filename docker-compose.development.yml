@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  app:
+    environment:
+      DB_URL: postgresql://on_running:@db:5432/on_running_development
+      RAILS_ENV: development
