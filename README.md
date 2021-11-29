@@ -4,6 +4,17 @@ There is a rake task to fetch and sync dealers in the database that can be autom
 something like a cron job (by using whenever gem for example), kubernetes job, etc. In this example,
 we'll run the task manually.
 
+# Assumptions
+Here we assume that all the data is in the following address (because the API doesn't have any
+pagination mechanism):
+```
+https://fakerapi.it/api/v1/companies?_seed=1&_quantity=200
+```
+We also assume that that the dealers' phone numbers are unique.
+If in subsequent requests a phone number disappears, it means the item has been deleted.
+I decided to go with Rails only because setting it up with webpacker for the React part was easier.
+But usually for simple projects like this, I rather to go with Sinatra or Roda.
+
 # Building docker images
 Please run `docker compose build` to build the docker images.
 
