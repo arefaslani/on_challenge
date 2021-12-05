@@ -1,0 +1,39 @@
+.MapContainer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 50vh 50vh;
+  grid-template-areas:
+    "map"
+    "list";
+  min-height: 100vh;
+
+  .header {
+    background-color: #00853e;
+    color: #fff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "list map";
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.MapContainer-list {
+  grid-area: list;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.MapContainer-map {
+  grid-area: map;
+  position: relative;
+}

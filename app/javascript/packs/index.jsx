@@ -7,7 +7,6 @@ import MapContainer from '../components/MapContainer'
 document.addEventListener('DOMContentLoaded', () => {
   const node = document.getElementById('map-data')
   const data = JSON.parse(node.getAttribute('data'))
-  console.log(data)
   ReactDOM.render(
     <MapContainer dealers={data} />,
     document.getElementById('app-place-holder')

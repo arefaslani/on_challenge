@@ -1,0 +1,18 @@
+.Dealer {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+
+  h4 {
+    color: #00853e;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  &.active {
+    background: #91c949;
+
+    p {
+      color: #fff;
+    }
+  }
+}
