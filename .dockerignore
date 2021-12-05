@@ -7,7 +7,6 @@ yarn-debug.log*
 
 /log/*
 /tmp/*
-!/log/.keep
-!/tmp/.keep
-
-/.bundle
+.env
+.env.test
+.bundle
