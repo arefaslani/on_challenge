@@ -33,6 +33,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Full-blown test framework
   gem 'rspec-rails'
+  # Use dotenv file for managing env variables in test and development environments
+  gem 'dotenv-rails'
 end
 
 group :development do
