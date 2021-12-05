@@ -24,8 +24,6 @@ COPY package.json .
 COPY yarn.lock .
 RUN yarn install --check-files --silent --ignore-optional
 
-COPY . .
-
 # Add a script to be executed every time the container starts.
 COPY docker/entrypoint.sh /usr/bin/
 ENTRYPOINT ["entrypoint.sh"]
